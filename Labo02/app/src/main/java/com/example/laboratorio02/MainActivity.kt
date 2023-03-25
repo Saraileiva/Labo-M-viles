@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         bind()
         setListener()
+        
     }
     private fun bind(){
         weightEditText = findViewById(R.id.weight_edit_text)
