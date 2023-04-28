@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_billboard">
+
+    <fragment
+        android:id="@+id/fragment_billboard"
+        android:name="com.example.labo06.ui.movie.billboardFragment"
+        android:label="fragment_billboard"
+        tools:layout="@layout/fragment_billboard" >
+        <action
+            android:id="@+id/action_fragment_billboard_to_fragment_new_movie"
+            app:destination="@id/fragment_new_movie" />
+        <action
+            android:id="@+id/action_fragment_billboard_to_fragment_movie"
+            app:destination="@id/fragment_movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_movie"
+        android:name="com.example.labo06.ui.movie.movieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/fragment_new_movie"
+        android:name="com.example.labo06.ui.movie.newMovieFragment"
+        android:label="fragment_new_movie"
+        tools:layout="@layout/fragment_new_movie" />
+</navigation>
